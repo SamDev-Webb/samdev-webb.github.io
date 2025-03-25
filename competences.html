@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Professionnel</title>
+    <title>Compétences - Portfolio Professionnel</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -16,10 +16,10 @@
     <nav id="navbar">
         <a href="index.html" class="logo">BOUHOUCHE SAMUEL</a>
         <ul class="nav-links">
-            <li><a href="index.html" class="nav-link active">Accueil</a></li>
+            <li><a href="index.html" class="nav-link">Accueil</a></li>
             <li><a href="a-propos.html" class="nav-link">À propos</a></li>
             <li><a href="projets.html" class="nav-link">Projets</a></li>
-            <li><a href="competences.html" class="nav-link">Compétences</a></li>
+            <li><a href="competences.html" class="nav-link active">Compétences</a></li>
             <li><a href="contact.html" class="nav-link">Contact</a></li>
         </ul>
         <div class="hamburger">
@@ -29,20 +29,24 @@
         </div>
     </nav>
 
-    <!-- Page d'accueil -->
-    <section id="accueil" class="active">
+    <!-- Page Compétences -->
+    <section id="competences" class="active">
         <div class="container">
-            <div class="intro-text">
-                <p class="intro-subtitle">Bonjour, je m'appelle</p>
-                <h1 class="intro-name">Bouhouche Samuel</h1>
-                <h2 class="intro-role">Je crée des expériences digitales.</h2>
-                <p class="intro-desc">Je suis un développeur web spécialisé dans la création d'expériences digitales exceptionnelles. Actuellement, je me concentre sur la conception d'applications web accessibles et centrées sur l'utilisateur.</p>
-                <a href="projets.html" class="cta-btn">Découvrir mes projets</a>
-            </div>
-            <div class="background-shapes">
-                <div class="shape shape-1"></div>
-                <div class="shape shape-2"></div>
-                <div class="shape shape-3"></div>
+            <h2 class="section-title">Compétences</h2>
+            <p class="section-subtitle">Technologies et outils que je maîtrise</p>
+            
+            <div class="skills-container">
+                <!-- Compétence 1 -->
+                <div class="skill-card fade-in">
+                    <div class="skill-icon-large">💻</div>
+                    <h3 class="skill-name">Développement Front-end</h3>
+                    <div class="skill-level-container">
+                        <div class="skill-level" data-level="90"></div>
+                    </div>
+                    <p class="skill-desc">
+                        HTML5, CSS3, (JavaScript ES6+), Bootstrap, responsive design.
+                    </p>
+                </div>
             </div>
         </div>
     </section>

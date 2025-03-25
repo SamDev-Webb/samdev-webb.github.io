@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Portfolio Professionnel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Loader d'animation initial -->
+    <div class="loader-container">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <a href="index.html" class="logo">BOUHOUCHE SAMUEL</a>
+        <ul class="nav-links">
+            <li><a href="index.html" class="nav-link">Accueil</a></li>
+            <li><a href="a-propos.html" class="nav-link">À propos</a></li>
+            <li><a href="projets.html" class="nav-link">Projets</a></li>
+            <li><a href="competences.html" class="nav-link">Compétences</a></li>
+            <li><a href="contact.html" class="nav-link active">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+
+    <!-- Page Contact -->
+    <section id="contact" class="active">
+        <div class="container">
+            <div class="contact-container">
+                <p class="contact-heading">Et maintenant ?</p>
+                <h2 class="contact-title">Entrons en contact</h2>
+                <p class="contact-text">
+                    Je suis actuellement à la recherche de nouvelles opportunités et mon inbox est toujours ouverte. Que vous ayez une question, une proposition de projet ou simplement envie de discuter, je ferai de mon mieux pour vous répondre !
+                </p>
+                
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="name" placeholder=" " required>
+                        <label for="name" class="form-label">Nom</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="email" placeholder=" " required>
+                        <label for="email" class="form-label">Email</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="subject" placeholder=" " required>
+                        <label for="subject" class="form-label">Sujet</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" id="message" placeholder=" " required></textarea>
+                        <label for="message" class="form-label">Message</label>
+                    </div>
+                    <button type="submit" class="send-btn">Envoyer</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="social-links">
+            <a href="#" class="social-link">🐦</a>
+            <a href="#" class="social-link">📷</a>
+            <a href="#" class="social-link">🔗</a>
+            <a href="#" class="social-link">📁</a>
+        </div>
+        <p>Conçu et développé par Bouhouche Samuel © 2025</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
