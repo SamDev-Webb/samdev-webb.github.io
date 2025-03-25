@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box; 
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#header {
+    div:first-child {
+        background-color: rgba(226, 43, 226, 0.144); 
+        color: rgba(137, 43, 226, 0.726); font-weight: 500;
+    }
+    nav>p>span {
+        font-weight: 700;
+    }
+}
+
+#section {
+    background-color: rgba(137, 43, 226, 0.726);
+    @media screen and (min-width: 724px) {
+        width: 70vw;
+        border-radius: 1rem;
+        border-bottom-left-radius: 7rem;
+    }
+}
+
+#section2 {
+    @media screen and (min-width: 724px) {
+    }
+}

@@ -1,0 +1,194 @@
+:root {
+    --main-color: #EC5B5D;
+    --secondary-color: #FCA0A2;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    margin: 0;
+    color: #222;
+    line-height: 1.5;
+}
+
+h1 {
+    color: var(--main-color);
+    font-size: 3rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px dotted;
+}
+
+h2 {
+    color: var(--secondary-color);
+    font-size: 2rem;
+}
+h3 {
+    font-size: 1.5rem;
+}
+
+a {
+    color: var(--main-color);
+    text-decoration: none;
+    font-weight: 800;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    text-transform: uppercase;
+
+    @media screen and (min-width: 1024px) {
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+    }
+    
+}
+
+
+#intro {
+    h1 {
+        padding-top: 2rem;
+        line-height: 5rem;
+        font-size: 4rem;
+        padding-bottom: .75rem;
+    }
+    p {
+        font-size: 1.2rem;
+        font-weight: 450;
+    }
+}
+
+#apropos {
+    padding: 2rem 0;
+    white-space: wrap;
+    h2{
+        font-weight: 800;
+    }
+    p {
+        font-size: 1.2rem;
+        font-weight: 450;
+    }
+}
+
+#carte {
+    padding: 2rem 0;
+    h2 {
+        font-weight: 800;
+    }
+    p {
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+    table{
+        width: 100%;
+        border-collapse: collapse;
+    }
+    th, td {
+        border: #222 1px solid;
+        padding: .75rem 1.25rem;
+    }
+    tr:first-child {
+        background-color: rgb(211, 211, 211);
+        font-weight: 700;
+    }
+}
+
+#contact {
+    padding: 2rem 0;
+    iframe {
+        width: 100%;
+        height: 450px;
+        border: 0;
+    }
+    div {
+        padding: 20px 0;
+    }
+    label {
+        display: block;
+        text-transform: capitalize;
+        margin-bottom: 1.2rem;
+    }
+    input, textarea {
+        padding: 10px 0 10px 10px;
+        border: 1px solid grey;
+        border-radius: 1em;
+    }
+    label,input:not([type="checkbox"]), textarea {
+        width: 100%;
+    }
+    button {
+        background-color: var(--main-color);
+        border: none;
+        width: 100%;
+        padding: 20px;
+        border-radius: .4em;
+        color: #fff;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+}
+
+#footer {
+    background-color: var(--main-color);
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.fa-solid {
+    color: #fff;
+}
+
+@media screen and (min-width:1024px) { 
+    #carte {
+        .container2{
+            display: flex;
+            gap: 200px;
+        }
+        .container3 {
+            display: flex;
+            gap: 200px;
+        }
+
+    }
+    #contact{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        h2 {
+            flex-basis: 100%;
+        }
+
+        article, aside {
+            flex-basis: 48%;
+        }
+    }
+
+}
+        
